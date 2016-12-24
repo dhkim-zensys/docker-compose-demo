@@ -10,7 +10,11 @@ on the host **demodb**. Default credentials are below:
 * **Username:** user
 * **Password:** test
 
-You do not have to do anything if you use `docker-compose`.
+You do not have to do anything if you use `docker-compose`. Docker Compose
+starts all containers in parallel. Even if you use linking or `depends_on`,
+it doesn't wait until the container is fully available. Spring Boot app fails
+if MySQL isn't up and running during initialization. Therefore we need to use
+the script `wait-for-it.sh` to wait until DB container is up and running.
 
 ## Usage
 
