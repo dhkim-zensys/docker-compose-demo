@@ -7,8 +7,8 @@ capabilities.
 Application assumes that a MySQL database with name **demo** is deployed 
 on the host **demodb**. Default credentials are below:
 
-* Username: user
-* Password: test
+* **Username:** user
+* **Password:** test
 
 You do not have to do anything if you use `docker-compose`.
 
