@@ -1,10 +1,11 @@
-version: '2'
+version: '3'
 
 services:
     api:
         build: .
+        image: tunix/docker-compose-demo
         ports:
-            - 8080:8080
+            - "8080"
         links:
             - db:demodb
         command: ["/source/wait-for-it.sh", "demodb:3306", "--", "java", "-jar", "/app/demo.jar"]
