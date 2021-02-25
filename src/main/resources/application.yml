@@ -9,6 +9,6 @@ spring:
         hibernate:
             ddl-auto: create-drop
     datasource:
-        url: jdbc:mysql://demodb/demo?characterEncoding=UTF-8&useSSL=false
-        username: user
-        password: test
+        url: jdbc:mysql://101.101.210.104/mysql?characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: root78()
