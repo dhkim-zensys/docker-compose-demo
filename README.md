@@ -4,11 +4,11 @@ This is a Spring Boot based Java app which connects to a MySQL instance
 running inside a Docker container in order to demonstrate docker-compose
 capabilities.
 
-Application assumes that a MySQL database with name **demo** is deployed 
+Application assumes that a MySQL database with name **mysql** is deployed 
 on the host **demodb**. Default credentials are below:
 
-* **Username:** user
-* **Password:** test
+* **Username:** root
+* **Password:** root78()
 
 You do not have to do anything if you use `docker-compose`. Docker Compose
 starts all containers in parallel. Even if you use linking or `depends_on`,
