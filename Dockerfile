@@ -5,7 +5,7 @@ COPY . /source
 WORKDIR /source
 RUN mkdir /app && \
     mvn clean package && \
-    cp target/demo-*.jar /app/demo.jar
+    cp target/demo-*.jar /app/demo.jar && \
     cp pinpoint-bootstrap.jar /app/pinpoint-bootstrap.jar
 
 EXPOSE 8080
